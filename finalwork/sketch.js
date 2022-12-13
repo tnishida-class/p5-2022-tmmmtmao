@@ -19,7 +19,7 @@ function setup(){
 function draw(){ 
   background(160, 192, 255);
   text("スペースキーを押してスタート！！", windowWidth / 2 - 50, 50)
-  text("バーでボールを跳ね返そう！", windowWidth / 2 - 50, 100)
+  text("バーでボールを跳ね返そう！!", windowWidth / 2 - 50, 100)
   stroke(0, 0, 0)
   fill(225, 225, 225)
   rect(mouseX - 50, mouseY - 20, 100, 40);
