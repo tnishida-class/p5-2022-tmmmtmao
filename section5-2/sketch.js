@@ -7,7 +7,7 @@ function setup(){
   crossmark(10, 10, 90, 90);
   ngmark(150, 50, 80);
   
-  regularPolygon(6, 250, 50, 40)
+  regularPolygon(7, 250, 50, 40)
 }
 
 function crossmark(x1, y1, x2, y2){
@@ -27,8 +27,8 @@ function ngmark(cx, cy, r){
 
 function regularPolygon (n, cx, cy, r){
   beginShape();
-  for(var i = 0; i < 6; i++){
-    let theta = TWO_PI * i * 1 / 6 - HALF_PI;
+  for(var i = 0; i < n; i++){
+    let theta = TWO_PI * i * 1 / n - HALF_PI;
     let x = cx + cos(theta) * r;
     let y = cy + sin(theta) * r;
     vertex(x,y);
