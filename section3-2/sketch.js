@@ -13,14 +13,16 @@ function setup(){
 
 function draw(){
   background(160, 192, 255);
-  ellipse(x, y, 20, 20);
+  ellipse(x, y, 30);
   x += vx;
   y += vy;
+
+
 
   // 重力（コメント機能でオンオフ切り替えて実行してみましょう）
   vy = constrain(vy + g, -vyMax, vyMax);
 
-  // 端の処理パターン (1) 反対側から出てくる
+// 端の処理パターン (1) 反対側から出てくる
   // if(x > width){ x = 0; }
   // else if(x < 0){ x = width; }
   // if(y > height){ y = 0; }
